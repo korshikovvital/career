@@ -1,0 +1,11 @@
+{% extends "email/replies/base_inbox.html" %}
+{% block message %}
+    <p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">
+        {{ user.full_name }} откликнулся (-ась) на вакансию {{ vacancy.title }} 
+        {% if vacancy.selection_type == "mass" %}
+            (ID вакансии: {{ vacancy.id }}).
+        {% else %}
+            (ID вакансии: {{ vacancy.id }}, ID вакансии в SAP: {{ vacancy.sap_id }}).
+        {% endif %}
+    </p>
+{% endblock message %}

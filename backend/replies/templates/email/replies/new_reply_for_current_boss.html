@@ -1,0 +1,11 @@
+{% extends "email/base.html" %}
+{% block message %}
+    <p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">
+
+        Уведомляем тебя о том, что {{ user.full_name }} откликнулся (-ась) на вакансию {{ vacancy.title }} в системе Карьерные маршруты.<br><br>
+
+        Ответ на это письмо не требуется.
+    </p>
+{% endblock message %}
+{% block link %}
+{% endblock link %}

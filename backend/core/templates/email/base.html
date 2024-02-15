@@ -1,0 +1,211 @@
+<html>
+
+
+
+<head>
+
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0;">
+
+  <meta name="format-detection" content="telephone=no" />
+
+
+
+  <style>
+
+    body {
+
+      margin: 0;
+
+      padding: 0;
+
+      min-width: 100%;
+
+      width: 100% !important;
+
+      height: 100% !important;
+
+    }
+
+
+
+    body,
+
+    table,
+
+    td,
+
+    div,
+
+    p,
+
+    a {
+
+      -webkit-font-smoothing: antialiased;
+
+      text-size-adjust: 100%;
+
+      -ms-text-size-adjust: 100%;
+
+      -webkit-text-size-adjust: 100%;
+
+      line-height: 100%;
+
+    }
+
+
+
+    table,
+
+    td {
+
+      mso-table-lspace: 0pt;
+
+      mso-table-rspace: 0pt;
+
+      border-collapse: collapse !important;
+
+      border-spacing: 0;
+
+    }
+
+
+
+    img {
+
+      border: 0;
+
+      line-height: 100%;
+
+      outline: none;
+
+      text-decoration: none;
+
+      -ms-interpolation-mode: bicubic;
+
+    }
+
+
+
+    a {
+
+      color: #34aaf2;
+
+    }
+
+
+
+    .long-text p {
+
+      margin: 1em 0px;
+
+    }
+
+
+
+    .long-text p:last-child {
+
+      margin-bottom: 0px;
+
+    }
+
+
+
+    .long-text p:first-child {
+
+      margin-top: 0px;
+
+    }
+
+
+  </style>
+
+
+
+</head>
+
+
+
+<body topmargin="0" rightmargin="0" bottommargin="0" leftmargin="0" marginwidth="0" marginheight="0" width="100%" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; width: 100%; height: 100%; -webkit-font-smoothing: antialiased; text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; line-height: 100%; background-color: #bfbfbf;"
+
+  bgcolor="#bfbfbf" text="#000000">
+
+
+
+  <table width="100%" align="center" border="0" cellpadding="0" cellspacing="0" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; width: 100%;"
+
+    class="background">
+
+    <tr>
+
+      <td align="center" valign="top" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; border-width: 1px; border-color: #bfbfbf; border-style: solid;" bgcolor="#bfbfbf">
+
+
+
+        <table border="0" cellpadding="0" cellspacing="0" align="center" bgcolor="#FFFFFF" width="600" style="border-collapse: collapse; border-spacing: 0; padding: 0; width: 600px; max-width: 600px;"
+
+          class="container">
+
+
+          <tr>
+
+            <td colspan="2" valign="top" align="left" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; font-weight: 500; color: #333333; font-size: 20px; font-family: Arial, Helvetica, sans-serif; text-align: left; padding-top: 32px; padding-left: 32px;">
+
+{% block hello %}
+              <span>Привет, коллега!</span>
+{% endblock hello %}
+            </td>
+
+          </tr>
+
+
+
+          <tr>
+
+            <td colspan="2" class="long-text links-color" valign="top" align="left" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; font-weight: normal; color: #333333; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: left; line-height: 1.5; padding-top: 24px; padding-left: 32px; padding-right: 32px;">
+
+                {% block message %}{% endblock message%}
+
+            </td>
+
+          </tr>
+
+
+          <tr>
+
+            <td class="long-text links-color" valign="bottom" align="right" style="border-collapse: collapse; border-spacing: 0; margin: 0; padding: 0; padding-bottom: 22px; font-weight: normal; font-size: 13px; font-family: Arial, Helvetica, sans-serif; text-align: right; padding-top: 30px; padding-right: 32px;">
+{% block link %}
+              <a href="{{ main_site_link }}/main" style="color: #34aaf2; text-decoration: none;">
+
+                Перейти на портал
+
+              </a>
+{% endblock link %}
+            </td>
+
+          </tr>
+
+        </table>
+
+      </td>
+
+    </tr>
+
+  </table>
+
+
+
+  </td>
+
+  </tr>
+
+  </table>
+
+
+
+</body>
+
+
+
+</html>

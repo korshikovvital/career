@@ -1,0 +1,5 @@
+{% extends "email/base.txt" %}
+{% block message %}
+        Поздравляем! Твоя заявка на вакансию {{ vacancy.title }} согласована.
+    Управление персоналом скоро свяжется с тобой.
+{% endblock message %}

@@ -1,0 +1,8 @@
+{% extends "email/base.txt" %}
+{% block message %}
+    {{ initiator.full_name }} отправил (-а) заявку на участие в тест-драйве на {{ test_drive_reply_date }}.
+    ТН: {{ initiator.personnel_number }}
+    e-mail: {{ initiator.email }}
+    Должность: {{ initiator.get_position }}
+    Оценка Top Performers: {{ initiator.top_performer_rate }}
+{% endblock message %}

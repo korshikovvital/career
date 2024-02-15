@@ -1,0 +1,5 @@
+{% extends "email/base.txt" %}
+{% block message %}
+{{ user.full_name }} согласован (-а) тобой на вакансию {{ vacancy.title }} {% if vacancy.selection_type == "mass" %}(ID вакансии: {{ vacancy.id }}). {% else %}(ID вакансии: {{ vacancy.id }}, ID вакансии в SAP: {{ vacancy.sap_id }}). {% endif %}
+Для запуска процесса перевода сотрудника обратись в HR своего региона.
+{% endblock message %}

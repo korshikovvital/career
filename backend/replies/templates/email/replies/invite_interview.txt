@@ -1,0 +1,5 @@
+{% extends "email/base.txt" %}
+{% block message %}
+        Ты приглашён (-а) на собеседование на вакансию {{ vacancy.title }}.
+    В ближайшее время {{ step_user.full_name }} организует встречу с тобой.
+{% endblock message %}

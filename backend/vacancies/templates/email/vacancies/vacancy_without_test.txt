@@ -1,0 +1,4 @@
+{% extends "email/base.txt" %}
+{% block message %}
+     Вакансия {{ vacancy.title }} не опубликована.
+{% endblock message %}

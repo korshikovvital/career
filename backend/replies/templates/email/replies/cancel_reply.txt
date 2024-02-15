@@ -1,0 +1,4 @@
+{% extends "email/base.txt" %}
+{% block message %}
+    {{ user.full_name }} отозвал (-а) отклик на вакансию {{ vacancy.title }} {% if vacancy.selection_type == "mass" %}(ID вакансии: {{ vacancy.id }}). {% else %}(ID вакансии: {{ vacancy.id }}, ID вакансии в SAP: {{ vacancy.sap_id }}). {% endif %}
+{% endblock message %}

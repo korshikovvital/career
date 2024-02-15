@@ -1,0 +1,9 @@
+{% extends "email/base.html" %}
+{% block hello %}
+    <span>Привет!</span>
+{% endblock hello %}
+{% block message %}
+    <p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">
+        {{ recipient.full_name }} получил (-а) твоё приглашение на чашку кофе и в ближайшее время назначит тебе встречу.
+    </p>
+{% endblock message %}

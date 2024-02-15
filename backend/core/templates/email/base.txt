@@ -1,0 +1,2 @@
+Привет, коллега!
+{% block message %}{% endblock message %}

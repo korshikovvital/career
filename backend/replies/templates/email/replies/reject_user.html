@@ -1,0 +1,6 @@
+{% extends "email/replies/base_outbox.html" %}
+{% block message %}
+    <p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">
+        {{ step_user.full_name }} отклонил (-а) твой отклик на вакансию {{ vacancy.title }}.
+    </p>
+{% endblock message %}

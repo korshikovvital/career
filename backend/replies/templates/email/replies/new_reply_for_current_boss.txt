@@ -1,0 +1,7 @@
+{% extends "email/base.txt" %}
+{% block message %}
+
+    Уведомляем тебя о том, что {{ user.full_name }} откликнулся (-ась) на вакансию {{ vacancy.title }} в системе Карьерные маршруты.
+
+    Ответ на это письмо не требуется.
+{% endblock message %}

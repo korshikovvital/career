@@ -1,0 +1,4 @@
+{% extends "email/base.txt" %}
+{% block message %}
+        {{ step_user.full_name }} отклонил (-а) твой отклик на вакансию {{ vacancy.title }}.
+{% endblock message %}

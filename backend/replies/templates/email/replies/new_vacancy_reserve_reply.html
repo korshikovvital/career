@@ -1,0 +1,17 @@
+{% extends "email/base.html" %}
+
+{% block message %}
+    <p style="line-height: 1.25; margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">
+    {{ initiator.full_name }} отправил (-а) заявку на кадровый резерв.
+    </p>
+    <br><strong>ТН:</strong> {{ initiator.personnel_number }}
+    <br><strong>ФИО:</strong> {{ initiator.full_name }}
+    <br><strong>e-mail:</strong> {{ initiator.email }}
+    <br><strong>Должность:</strong> {{ initiator.get_position }}
+    <br><strong>Оценка Top Performers:</strong> {{ initiator.top_performer_rate }}
+    <br><strong>Трек:</strong> {{ vacancy_reserve_title }}
+    <br><strong>Стаж:</strong> {{ experience }}
+
+{% endblock message %}
+{% block link %}
+{% endblock link %}

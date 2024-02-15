@@ -1,0 +1,6 @@
+{% extends "email/base.html" %}
+{% block message %}
+  {% for request in error_sent_requests %}
+    SapRequest GUID {{ request.guid }} STATUS {{ request.status }} .
+ {% endfor %}
+{% endblock message %}

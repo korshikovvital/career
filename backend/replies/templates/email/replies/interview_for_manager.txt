@@ -1,0 +1,5 @@
+{% extends "email/base.txt" %}
+{% block message %}
+{{ user.full_name }} приглашен (-а) на собеседование на вакансию {{ vacancy.title }} {% if vacancy.selection_type == "mass" %}(ID вакансии: {{ vacancy.id }}). {% else %}(ID вакансии: {{ vacancy.id }}, ID вакансии в SAP: {{ vacancy.sap_id }}). {% endif %}
+Не забудь организовать встречу, забронировав время в календаре, а если ты его уже провел (-а), то подведи итоги встречи в системе Карьерные маршруты.
+{% endblock message %}

@@ -1,0 +1,11 @@
+{% extends "email/base.txt" %}
+{% block message %}
+{{ initiator.full_name }} отправил (-а) заявку на кадровый резерв.
+    ТН: {{ initiator.personnel_number }}
+    ФИО: {{ initiator.full_name }}
+    e-mail: {{ initiator.email }}
+    Должность: {{ initiator.get_position }}
+    Оценка Top Performers: {{ initiator.top_performer_rate }}
+    Трек: {{ vacancy_reserve_title }}
+    Стаж: {{ experience }}
+{% endblock message %}

@@ -1,0 +1,14 @@
+{% extends "email/base.html" %}
+
+{% block message %}
+    <p style="line-height: 1.25; margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">
+    Ты записался на тест-драйв на {{ test_drive_reply_date }}.
+    </p>
+    <br>
+    <p style="line-height: 1.25; margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">
+    Тебе будет направлена ссылка для прохождения теста от адресата noreply@shl.tools, его необходимо пройти в течение 3-х рабочих дней после получения ссылки.
+    В случае успешного прохождения тестирования ты получишь приглашение и ссылку для подключения к тест-драйву.
+    </p>
+{% endblock message %}
+{% block link %}
+{% endblock link %}

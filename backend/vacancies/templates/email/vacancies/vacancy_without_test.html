@@ -1,0 +1,11 @@
+{% extends "email/base.html" %}
+{% block message %}
+    Вакансия {{ vacancy.title }} не опубликована.
+{% endblock message %}
+{% block link %}
+    <a href="{{ hr_vacancies_link }}" style="color: #34aaf2; text-decoration: none;">
+
+        Перейти на портал
+
+    </a>
+{% endblock link %}

@@ -1,0 +1,12 @@
+{% extends "email/base.html" %}
+{% block hello %}
+    <span>Привет!</span>
+{% endblock hello %}
+{% block message %}
+    <p style="margin: 1em 0px; margin-bottom: 0px; margin-top: 0px;">
+        {{ sender.full_name }} вдохновился (-ась) твоей историей успеха и приглашает тебя поболтать о карьере за чашкой кофе <span style="font-family:Wingdings">J</span>.
+    Осталось только назначить встречу, захватить с собой отличное настроение и поделиться самыми яркими впечатлениями о том, чем ты занимаешься в компании МегаФон!
+    </p>
+{% endblock message %}
+{% block link %}
+{% endblock link %}
